@@ -11,14 +11,6 @@ import { NavigationExtras } from '@angular/router';
 })
 export class HomePage {
 
-  MonTexte="Bonjour";
-
-  Eleves = [
-    {nom:"Kiroule",prenom:"Pierre",sexe:0},
-    {nom:"Tournelle",prenom:"Marie",sexe:1},
-    {nom:"Dutoque",prenom:"Yvan",sexe:0},
-    
-  ]
 
   Articles:any=[];
 
