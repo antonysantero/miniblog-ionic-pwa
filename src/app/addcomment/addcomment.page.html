@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button>Button</ion-back-button>
+    </ion-buttons>
+    
+    <ion-title>Nouveau comment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<form (ngSubmit)="logForm()">
+  <ion-item>
+    <ion-input label="Pseudo" labelPlacement="stacked" placeholder="Enter text" [(ngModel)]="item.pseudo" name="pseudo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea label="Commentaire" labelPlacement="stacked" placeholder="Type something here" rows="20" [(ngModel)]="item.comm" name="comm"></ion-textarea>
+  </ion-item>
+
+    <ion-button type="submit" expand="block">Valider</ion-button>
+
+</form>
+</ion-content>
